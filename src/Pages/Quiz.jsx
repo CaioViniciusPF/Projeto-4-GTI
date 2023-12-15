@@ -59,19 +59,19 @@ function Quiz() {
   // Exemplo de lógica simples para determinar o resultado
   if (empatados.length === 1) {
     if(empatados[0]==="A"){
-      return `Mais votado A`;
+      return `Pelo visto vc escolheu muito a letra A ;)`;
     }
     if(empatados[0]==="B"){
-      return `caioB`;
+      return `Pelo visto vc escolheu muito a letra B ;)`;
     }
     if(empatados[0]==="C"){
-      return `caioC`;
+      return `Pelo visto vc escolheu muito a letra D ;)`;
     }
     if(empatados[0]==="D"){
-      return `caioD`;
+      return `Pelo visto vc escolheu muito a letra C ;)`;
     }
   } else if (empatados.length > 1) {
-    return `Empate entre ${empatados.join(' e ')}`;
+    return `Empate entre ${empatados.join(' e ')} INDECISO`;
   } else {
     return 'Sem resultados válidos';
   }
@@ -80,9 +80,9 @@ function Quiz() {
     const resultado = calcularResultado();
 
     return (
-      <div >
-        <h2>Resultado Final:</h2>
-        <p>{resultado}</p>
+      <div className='bg-[#113859] rounded-3xl text-blue-gray-50 min-w-[400px] w-[60%] py-7 flex flex-col gap-7 items-center'>
+        <h2 className='text-3xl font-extrabold '>Resultado Final:</h2>
+        <p className='font-semibold text-lg'>{resultado}</p>
       </div>
     );
   };
