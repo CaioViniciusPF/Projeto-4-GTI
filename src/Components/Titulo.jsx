@@ -10,7 +10,7 @@ function Titulo() {
       <p className='text-2xl  md:w-3/5 text-justify'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptates ipsam alias, facilis reprehenderit incidunt fugiat omnis maxime debitis repellendus illo, veritatis nam laudantium? Inventore ipsum enim blanditiis deleniti esse.
           </p>
-      <img src="./bg/images.jpg" alt="" className='w-96 h-96 rounded-full'/>
+      <img src="images.jpg" alt="" className='w-96 h-96 rounded-full'/>
     </div>
       
     
